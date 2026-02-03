@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Guess the Number</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+  <h1>🎯 Guess the Number</h1>
+  <p>I am thinking of a number between 1 and 20</p>
+
+  <div id="difficulty">
+  <button data-level="easy">Easy</button>
+  <button data-level="medium">Medium</button>
+  <button data-level="hard">Hard</button>
+</div>
+
+
+<input
+  type="number"
+  id="guessInput"
+  placeholder="Enter your guess"
+  inputmode="numeric"
+  aria-label="Guess input"
+/>
+
+  <button id="checkBtn">Check</button>
+  <button id="resetBtn">Reset Game</button>
+
+
+<p id="message" class="neutral">Start guessing...</p>
+  <p>Attempts: <span id="attempts">0</span></p>
+  <p>High Score: <span id="highScore">--</span></p>
+
+
+  <div class="rules">
+  <h2>📜 Game Rules</h2>
+  <ul>
+    <li>The computer chooses a number between <strong>1 and 20</strong>.</li>
+    <li>Enter your guess in the input box.</li>
+    <li>Click the <strong>Check</strong> button.</li>
+    <li>You will be told if your guess is too high or too low.</li>
+    <li>The game ends when you guess the correct number.</li>
+  </ul>
+</div>
+
+
+ <footer>
+  <p>Made with ❤️ by Ashutosh Tripathi</p>
+</footer>
+
+<div id="confetti-container"></div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
